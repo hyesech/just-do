@@ -1,6 +1,4 @@
-# Dev Branch
+# Ver01 Branch
 
-Default 브랜치이며 이 branch의 내용만 main 브랜치로 병합할 수 있다. 
-
-### feature branches
-##### 1. ver 0.1 
+가장 처음 작업한 Branch
+여기에서부터 업데이트를 한 후 Ver02 Branch에 기록 후 dev로 merge한다.
