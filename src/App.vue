@@ -3,7 +3,7 @@
     <TodoHeader></TodoHeader>
     <TodoInput v-on:addTodoItem="addOneItem"></TodoInput>
     <TodoList v-bind:propsdata="todoItems" v-on:removeTodoItem="removeOneItem"></TodoList>
-    <TodoFooter></TodoFooter>
+    <TodoFooter v-on:clearAll="clearAllItems"></TodoFooter>
   </div>
 </template>
 
@@ -29,7 +29,11 @@ export default {
       localStorage.removeItem(todoItem.item);
       this.todoItems.splice(index, 1);
       console.log(todoItem);
-    }            
+    },
+    clearAllItems: function(){
+      localStorage.clear();
+      this.todoItems = [];
+    }      
   },
   created: function(){
     if(localStorage.length > 0){
