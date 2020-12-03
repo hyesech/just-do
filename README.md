@@ -1,18 +1,6 @@
-# just-do
+# Dev Branch
 
-> A Vue.js project
+Default 브랜치이며 이 branch의 내용만 main 브랜치로 병합할 수 있다. 
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### feature branches
+##### 1. ver 0.1 
