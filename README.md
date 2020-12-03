@@ -1,4 +1,3 @@
-# Ver01 Branch
+# Ver02 Branch
 
-가장 처음 작업한 Branch
-여기에서부터 업데이트를 한 후 Ver02 Branch에 기록 후 dev로 merge한다.
+ver01의 코드를 리팩토링하고 dev branch로 merge 할 예정
