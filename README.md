@@ -12,5 +12,14 @@
 4. 그러면 바로바로 업데이트된다. app의 사이클 안에서 모든 작업이 끝나는 것이기 때문에.
 
 
+##### delete 역시 로컬스토리지에 바로바로 저장되고 있으나 스크린에는 동시 업데이트 x (리스트 component에 해당 사실을 알리지는 않음)
+1. v-on:하위컴포넌트에서 발생시킨 이벤트 이름 = "상위 컴포넌트의 메소드 이름"
+2. TodoList가 presenter가 되고 App.vue가 상위가 된다.
+3. 하위 컴포넌트에서 this.$emit('removeOneItem', todoItem, index)로 인자와 이름을 올려보내면 상위 컴포넌트에서 이를 받음.
+4. removeTodoItem 이렇게 이름을 붙여서 호출 -> removeTodoItem 발생시 removeOneItem이 호출되도록 v-on:removeTodoItem="removeOneItem" 작성
+5. 그러면 removeOneItem 메소드가 호출된다.
+6. removeOneItem 메소드에 인자였던 todoItem이 객체라 key 값을 지우려면 todoItem.item을 지워야 하는 문제가 있었음. ---> 해결
+
+
 ##### clear All로 다 지우게 되면 역시 local Storage는 즉각적으로 비워지지만 screen으로 바로바로 업데이트 되지 않음(상호 통신x)
 
