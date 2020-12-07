@@ -1,6 +1,6 @@
 ## Dev Branch
 
-#### UPDATE ver03
+### UPDATE ver03
 #### 2020년 12월 8일 ~ NOW : dev03에서 작업 중
 
 ##### 할일 목록과 해결 방법 기록
@@ -10,7 +10,7 @@
 
 ---
 
-#### UPDATE modal
+### UPDATE modal
 #### 2020년 12월 7일 ~ NOW : dev03에서 작업 중
 
 ##### default modal의 디자인, 사용성 개선
@@ -18,7 +18,7 @@
 
 
 ---
-#### UPDATE ver02
+### UPDATE ver02
 ##### 2020년 12월 3일: dev02로부터 merge 완료
 
 ##### Container 컴포넌트(상위), Presenter 컴포넌트(하위)로 나누어서 하나의 컴포넌트(상위)가 모든 조작을 주관하는 방식으로 리팩토링: 덕분에 실시간 동기화 가능
