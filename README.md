@@ -9,3 +9,5 @@
 
 
 ### 사용자 기능 개선
+#### Transition Effect
+1. 할 일 업데이트 시 자연스럽게 아래에서 위로 올라오는 효과를 transition-group을 이용해서 구현
