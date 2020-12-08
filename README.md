@@ -1,6 +1,14 @@
 
 ### UPDATE ver03
-#### 2020년 12월 7일 ~ NOW : userexp branch에서 작업 후 ver03에 병합
+#### 2020년 12월 8일 ~ NOW
+
+##### 1. ES5 -> ES6
+
+
+
+---
+### UPDATE userexp
+#### 2020년 12월 4일 ~ 2020년 12월 8일: userexp branch에서 작업 후 ver03에 병합
 
 
 ##### 1. 사용자 기능 개선: 앱 플로우 
