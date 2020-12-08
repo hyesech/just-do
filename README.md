@@ -1,19 +1,16 @@
 ## Dev Branch
 
 ### UPDATE ver03
-#### 2020년 12월 8일 ~ NOW : dev03에서 작업 중
-
-##### 할일 목록과 해결 방법 기록
-##### 사용자 경험 개선, 앱 플로우 
+#### 2020년 12월 7일 ~ NOW : userexp branch에서 작업 후 ver03에 병합
 
 
+##### 1. 사용자 기능 개선: 앱 플로우 
+1. default modal의 디자인, 사용성 개선
+2. modal과 같이 서비스 전반에 사용되는 컴포넌트들을 관리할 Common 폴더를 만듦
+3. slot: 뷰의 기능 중 하나, 슬롯을 이용해서 특정 부분을 재정의할 수 있다. 특히 html 안쪽 부분. 특정 컴포넌트의 일부 ui를 재사용할 수 있음.
 
----
-
-### UPDATE userexp
-#### 2020년 12월 7일 ~ NOW : userexp branch에서 작업중
-
-##### default modal의 디자인, 사용성 개선
+##### 2. 사용자 경험 개선: 할 일 삭제, 업로드시 transition 이미지 부여
+1. Transition Effect: 할 일 업데이트 시 자연스럽게 아래에서 위로 올라오는 효과를 transition-group을 이용해서 구현
 
 
 
