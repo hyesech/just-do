@@ -10,8 +10,8 @@
 
 ---
 
-### UPDATE modal
-#### 2020년 12월 7일 ~ NOW : dev03에서 작업 중
+### UPDATE userexp
+#### 2020년 12월 7일 ~ NOW : userexp branch에서 작업중
 
 ##### default modal의 디자인, 사용성 개선
 
