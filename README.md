@@ -1,15 +1,14 @@
 
-### UPDATE ver03
-#### 2020년 12월 8일 ~ NOW
+### UPDATE ver04
+#### 2020년 12월 12일 ~ NOW
 
 ##### 1. ES5 -> ES6
 
 
 
 ---
-### UPDATE userexp
+### UPDATE ver03
 #### 2020년 12월 4일 ~ 2020년 12월 8일: userexp branch에서 작업 후 ver03에 병합
-
 
 ##### 1. 사용자 기능 개선: 앱 플로우 
 1. default modal의 디자인, 사용성 개선
