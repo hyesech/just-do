@@ -10,5 +10,5 @@
         loader: 'babel-loader',
         exclude: /node_modules/
 
-3. 
+
 
