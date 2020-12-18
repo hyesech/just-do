@@ -3,7 +3,9 @@
 
 ##### 1. state 속성 적용
 1. state: 여러 컴포넌트에 공유 되는 data
-2. 
+2. created method와 todoItem 배열을 state로 보내서 중간에 props로 내려주지 않아도 하위 컴포넌트가 가져다 쓸 수 있도록 리팩토링함
+
+
 ##### 2. mutations 적용
 1. state 값을 변경하는 이벤트 로직, 메서드: methods
 2. 
