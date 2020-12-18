@@ -29,6 +29,24 @@ export const store = new Vuex.Store({
       const obj = { completed: false, item: todoItem };
       localStorage.setItem(todoItem, JSON.stringify(obj));
       state.todoItems.push(obj);
+    },
+    removeOneItem(state, todoItem, index) {
+      localStorage.removeItem(todoItem.item);
+      state.todoItems.splice(index, 1);
+    },
+    toggleOneItem(state, payload) {
+      state.todoItems[payload.index].completed = !state.todoItems[payload.index]
+        .completed;
+      // localStorage Update: 갱신 기능이 따로 없어서 삭제 후, 재추가
+      localStorage.removeItem(payload.todoItem.item);
+      localStorage.setItem(
+        payload.todoItem.item,
+        JSON.stringify(payload.todoItem)
+      );
+    },
+    clearAllItems(state) {
+      localStorage.clear();
+      state.todoItems = [];
     }
   }
 });
