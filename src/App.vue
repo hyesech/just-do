@@ -13,12 +13,12 @@ import TodoInput from "./components/TodoInput.vue"
 import TodoList from "./components/TodoList.vue"
 import TodoFooter from "./components/TodoFooter.vue"
 
-export default{
+export default {
   components:{
-    'TodoHeader': TodoHeader,
-    'TodoInput': TodoInput,
-    'TodoList': TodoList,
-    'TodoFooter': TodoFooter
+    TodoHeader,
+    TodoInput,
+    TodoList,
+    TodoFooter
     }
 }
 
@@ -27,8 +27,6 @@ export default{
 <style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   margin-top: 60px;
   

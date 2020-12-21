@@ -1,49 +1,29 @@
 <template>
   <div>
-      <ul>
-          <li class="shadow" v-for="(todoItem, index) in todoItems" v-bind:key="todoItem">
+      <transition-group name="list" tag="ul">
+          <li class="shadow" v-for="(todoItem, index) in this.$store.state.todoItems" v-bind:key="todoItem">
             <i class="checkBtn fas fa-check" v-bind:class="{checkBtnCompleted: todoItem.completed}" v-on:click="toggleComplete(todoItem, index)"></i>
               <span v-bind:class="{textCompleted:todoItem.completed}">{{todoItem.item}}</span>
               <span class="removeBtn" v-on:click="removeItem(todoItem, index)">
                   <i class="fas fa-minus"></i>
                 </span>
           </li>
-          
-      </ul>
+      </transition-group>
   </div>
 </template>
 
 <script>
 export default {
-    data: function(){
-        return{
-            todoItems: []
-        }
-    },
     methods: {
-       removeItem: function(todoItem, index){
-           console.log(todoItem, index);
-           localStorage.removeItem(todoItem);
-           this.todoItems.splice(index, 1);
+       removeItem(todoItem, index){
+           console.log({todoItem,index});
+        this.$store.commit('removeOneItem', todoItem, index);
        },
-       toggleComplete: function(todoItem, index){
-           todoItem.completed = !todoItem.completed
-
-        //  localStorage 갱신 코드: update 기능이 따로 없어서
-            localStorage.removeItem(todoItem.item)
-            localStorage.setItem(todoItem.item, JSON.stringify(todoItem))
+       toggleComplete(todoItem, index){
+           this.$store.commit('toggleOneItem', {todoItem, index});
        }
-        
     },
-    created: function(){
-        if(localStorage.length > 0){
-            for(var i = 0; i < localStorage.length; i++) {
-                if(localStorage.key(i) !== 'loglevel:webpack-dev-server'){
-                    this.todoItems.push(JSON.parse(localStorage.getItem(localStorage.key(i))));
-                }
-            }
-        }
-    }
+    
 
 }
 </script>
@@ -80,6 +60,15 @@ li {
 .textCompleted {
     text-decoration: line-through;
     color: #b3adad;
+}
+
+/* List Item Transition Effect */
+.list-enter-active, .list-leave-active {
+  transition: all 1s;
+}
+.list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(30px);
 }
 
 </style>

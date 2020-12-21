@@ -7,8 +7,8 @@
 <script>
 export default {
     methods: {
-        clearAllTodo: function(){
-            localStorage.clear()
+        clearAllTodo(){
+            this.$store.commit('clearAllItems')
         }
     },
 
