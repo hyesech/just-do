@@ -15,7 +15,7 @@
     "vue": "^2.5.11",
     "vuex": "^3.6.0"
   },
-  "homepage": "https://hyesech.github.io/just-do",
+  "homepage": "https://hyesech.github.io/just-do/",
   "browserslist": [
     "> 1%",
     "last 2 versions",
