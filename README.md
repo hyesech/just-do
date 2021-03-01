@@ -1,3 +1,7 @@
+### UPDATE gh-pages
+github deploy로 배포
+
+
 ### UPDATE ver05
 #### 2020년 12월 13일 ~ 2020년 12월 18일: Vuex(VueJS 상태 관리 프로그램 활용)
 
